@@ -1,3 +1,9 @@
+/*
+** Author 	: Gzh
+** Datetime : 1/21
+** Problom  : 全排列(STL源码)
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
