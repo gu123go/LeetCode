@@ -51,13 +51,13 @@ bool __next_permutation(_BidirectionalIterator __first, _BidirectionalIterator _
 int main()
 {
 
-	vector<int> iv{1,2,3,4,5};
+	vector<int> iv{1,2,3,4};
 	vector<char> cv{'a','b','c','d'};
 	do{
-		for(auto item : cv)
+		for(auto item : iv)
 			cout << item;
 		cout << endl;
-	}while(::next_permutation(cv.begin(), cv.end()));
+	}while(::next_permutation(iv.begin(), iv.end()));
 
 	return 0;
 }
