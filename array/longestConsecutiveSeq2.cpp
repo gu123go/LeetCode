@@ -1,7 +1,7 @@
 /*
 ** Author   : Gzh
 ** Datetime : 1/6
-** Problom  : ╪Ш longestConsecutiveSeq.cpp нд╪Ч
+** Problom  : Х╖│ longestConsecutiveSeq.cpp Ф√┤Д╩╤
 */
  
 #include <iostream>

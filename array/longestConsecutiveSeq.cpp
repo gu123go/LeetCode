@@ -5,8 +5,8 @@
 			  For example, Given [100, 4, 200, 1, 3, 2], The longest consecutive elements sequence is [1,
 			  2, 3, 4]. Return its length: 4.
 			  Your algorithm should run in O(n) complexity
-** 时间复杂度O(n)；空间复杂度O(n)
-** 注：方法二见 longestConsecutiveSeq2 
+** 鏃堕棿澶嶆潅搴(n)锛涚┖闂村鏉傚害O(n)
+** 娉細鏂规硶浜岃 longestConsecutiveSeq2 
 */
 
 #include <iostream>
