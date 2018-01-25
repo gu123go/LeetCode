@@ -2,6 +2,7 @@
 ** Author 	: Gzh
 ** Datetime : 1/20
 ** Problom  : 输出所给字符串的全排列（递归实现）
+** solution 2 please go to permutation2.cpp
 */
 
 #include <iostream>

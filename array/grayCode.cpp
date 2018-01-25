@@ -2,6 +2,7 @@
 ** Author 	 : Gzh
 ** Datetime  : 1/24
 ** Problom   : Gray Code [格雷码 (Gray Code) 的定义请参考 http://en.wikipedia.org/wiki/Gray_code]
+** Solution 2 please go to grayCode2.cpp
 */
 
 

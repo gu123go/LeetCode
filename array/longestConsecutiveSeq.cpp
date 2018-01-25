@@ -6,7 +6,7 @@
 			  2, 3, 4]. Return its length: 4.
 			  Your algorithm should run in O(n) complexity
 ** 时间复杂度O(n)；空间复杂度O(n)
-** 注：方法二见 longestConsecutiveSeq2 
+** solution 2 please go to longestConsecutiveSeq2 
 */
 
 #include <iostream>

@@ -12,6 +12,7 @@
 				(-2, -1, 1, 2)
 				(-2, 0, 0, 2)
 ** O(n^3)
+** solution 2 please go to 4Sum2.cpp
 */
 
 #include <iostream>

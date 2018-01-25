@@ -3,6 +3,7 @@
 ** DateTime : 1/20
 ** Problom  : see 4Sum.cpp
 ** 时间复杂度 平均O(n^2) 最坏O(n^4) 空间复杂度O(n^2)
+** solution 3 please go to 4Sum3.cpp
 */
 
 #include <iostream>
