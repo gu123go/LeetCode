@@ -80,14 +80,11 @@ class list{
 		node->next = node;
 		node->pre = node;
 	}
-
 	void destroy_node(iterator pos){
-		pos.node->pre->next = pos.node->next;
-		pos.node->next->pre = pos.node->pre;
-
 		delete pos.node;
 		pos.node = nullptr;
 	}
+	// 
 	link_type create_node(const T& x){
 		link_type tmp = get_node();
 		::new(static_cast<void*>(&(tmp->val))) T(x);
@@ -103,10 +100,30 @@ public:
 	const_iterator end() const { return node; } 
 	const_reference front() const { return *begin(); }
 	const_reference back() const { return *(--end()); }
-	
+	void clear(){
+		for(iterator itr = begin(); itr != end(); ++itr)
+			erase(itr);
+	}
 
 	bool empty() const { return node->next == node; }  
+	iterator erase(iterator pos){
+		link_type next_node = link_type(pos.node->next);
+		link_type pre_node = link_type(pos.node->pre);
+		
+		pre_node->next = next_node;
+		next_node->pre = pre_node;
+		destroy_node(pos);
+		return iterator(next_node)
+	}
+	
+  	void pop_front() { erase(begin()); }  
+  	void pop_back() {   
+    	iterator tmp = end();  
+	    erase(--tmp);  
+  	}
 
+	//iterator erase(iterator first, iterator last);
+	
 	list(){ empty_initialize(); }
 	list(std::initializer_list<T> l){
 		empty_initialize();
@@ -128,12 +145,13 @@ public:
 	iterator insert(iterator pos){ return insert(pos, T()); }
 	//void insert(iterator pos, int n, const T& x){insert(pos, (size_type)n, x); }
 	//void insert(iterator pos, long n, const T& x){insert(pos, (size_type)n, x);}
-
-	// 在头结点前插入元素  
-	void push_front(const T& x) { insert(begin(), x); }  
-	// 在尾结点后插入元素  
+  
+	void push_front(const T& x) { insert(begin(), x); }
 	void push_back(const T& x) { insert(end(), x); }  
 
-
+	~list(){
+		clear();
+		destroy_node(node);
+	}
 
 };
