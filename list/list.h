@@ -113,7 +113,7 @@ public:
 		pre_node->next = next_node;
 		next_node->pre = pre_node;
 		destroy_node(pos);
-		return iterator(next_node)
+		return iterator(next_node);
 	}
 	
   	void pop_front() { erase(begin()); }  
@@ -153,5 +153,8 @@ public:
 		clear();
 		destroy_node(node);
 	}
+
+	link_type getNode(){ return node->next; }
+	bool isEnd(link_type _node){ return _node == node; }
 
 };
