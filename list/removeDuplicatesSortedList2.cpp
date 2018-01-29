@@ -8,6 +8,7 @@
 #include <iostream>
 #include "list.h"
 
+//Recursive
 void Solution(list<int> &il, list<int>::iterator pre, list<int>::iterator p)
 {
 	if(il.end() == p) return;
