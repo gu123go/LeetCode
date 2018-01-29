@@ -1,3 +1,10 @@
+/*
+** Author 	: Gzh
+** Datetime : 1/29
+** Problom  : see removeDuplicatesSortedList.cpp
+*/
+
+
 #include <iostream>
 #include "list.h"
 
