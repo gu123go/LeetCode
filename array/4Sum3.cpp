@@ -32,7 +32,7 @@ vector<vector<int>> Solution(vector<int> &nums, int target)
 			auto b = i->second.second;
 			auto c = j->second.first;
 			auto d = j->second.second;
-			if(a != c &&  != d && b != d && b != d){
+			if(a != c && a != d && b != c && b != d){
 				vector<int> tmpIv = {nums[a], nums[b], nums[c], nums[d]}
 				sort(tmpIv.begin(), tmpIv.end());
 				result.push_back(tmpIv);
